@@ -1,6 +1,6 @@
-# jxzj_offical_web
+## offical_web
 
-> official web of jxzj
+> official web
 
 ## Build Setup
 
