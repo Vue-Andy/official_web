@@ -1,0 +1,162 @@
+/* 公共样式类 */
+.isFix{
+  position:fixed;
+  z-index:1000;
+}
+.flex{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.flex.sa{
+  justify-content: space-around;
+}
+.cursor{
+  cursor: pointer;
+}
+.tc{
+  text-align: center;
+}
+.tr{
+  text-align: right;
+}
+.pr{
+  position: relative;
+}
+.overflow_hidden{
+  overflow:hidden;
+}
+@media screen and (max-width: 768px) {
+  /* html{  不能放开，否则点击底部无法跳到目标页顶部
+    height:100%;
+    overflow: hidden;
+  }
+  body{
+    height:100%;
+    overflow: auto;
+  } */
+  div.top.overflow_hidden {
+    line-height: 0;
+  }
+}
+.mar_auto{
+  margin:0 auto;
+}
+@media screen and (min-width: 768px) {
+  div.w1200 {
+    width:62.5%;
+  }
+}
+.mt30{
+  margin-top:0.3rem;
+}
+.mt40{
+  margin-top:0.4rem;
+}
+.mt60{
+  margin-top:0.6rem;
+}
+.mt70{
+  margin-top:0.7rem;
+}
+.mb50{
+  margin-bottom:0.5rem;
+}
+div.title{
+  font-size: 0.24rem;
+  height:1.375em;
+  line-height: 1.375em;
+  color:#111;
+  margin-bottom:1.25em;
+  margin-top:5em;
+}
+div.title:first-child{
+  margin-top:0;
+}
+div.title::before{
+  content:'';
+  display:inline-block;
+  width:5px;
+  background: #7BAA17;
+  border-radius: 3px;
+  margin-right:5px;
+}
+@media screen and (max-width: 1920px) {
+  div.title::before{
+    height:1em;
+    margin-bottom:-4px;
+  }
+}
+@media screen and (max-width: 1680px) {
+  div.title::before{
+    height:1em;
+    margin-bottom:-3px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  div.title::before{
+    height:1em;
+    margin-bottom:-2px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  div.title::before{
+    height:1em;
+    margin-bottom:-1px;
+  }
+}
+a{
+  color:#333;
+  outline: none;
+  text-decoration: none;
+}
+img.fw{
+  width:100%;
+}
+/* 顶部全屏栏高度 */
+div.empty{
+  height:70px;
+}
+div.emptyHeader{
+  font-size: 0.28rem;
+  height:3.14em;
+}
+/* 大纲样式 */
+.theme_container{
+  /* width:16.3%; */
+  text-align:center;
+  box-sizing: border-box;
+}
+.syllabus{
+  border-radius:4px;
+  background:#F5F5F5;
+}
+.syllItem{
+  height:66px;
+  width:135px;
+  line-height: 66px;
+  font-size: 0.18rem;
+  color:#111;
+  cursor:pointer;
+}
+.syllItem:hover{
+  color:#7BAA17;
+  /* background:#7BAA17; */
+}
+/* 主内容 */
+@media screen and (min-width: 768px) {
+  section .main {
+    font-size: 0.2rem;
+    padding-top:2.5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .main {
+    font-size: 0.28rem;
+    padding:2em 1.14em 0 1.14em;
+  }
+  div.title{
+    font-size: 0.32rem;
+    margin-bottom:0.75em;
+  }
+}

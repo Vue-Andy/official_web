@@ -1,0 +1,177 @@
+.syllabus.isFix{
+  position:fixed;
+  top:100px;
+}
+.text{
+  font-size: 0.16rem;
+  line-height: 30px;
+}
+div.active{
+  background:#7BAA17;
+  color:#fff;
+}
+/* 公司简介样式 */
+div.title{
+  margin-top:0;
+}
+/* 荣誉资质样式 */
+.cont > div > div{
+  font-size: 0.2rem;
+  margin-bottom:1.5em;
+}
+.imgBox + p{
+  padding:0 10px;
+  margin-top:0.5em;
+  font-size:0.16rem;
+  height:2.8em;
+  line-height: 1.4em;
+  overflow:hidden;
+}
+/* 企业文化样式 */
+.detail > .cont > p{
+  height:22px;
+  line-height: 1em;
+  font-size: 0.16rem;
+  color:#333;
+  margin:10px 0;
+  padding-left:1.5em;
+  background-image:url(../../assets/images/about/TriangleCopy.png);
+  background-repeat: no-repeat;
+  background-size:1em 1em;
+}
+/* 发展历程样式 */
+.develop .timeBox,.develop .textBox{
+  padding-top:36px;
+}
+.develop .timeBox p,.develop .textBox p{
+  width:100%;
+  height:22px;
+  line-height: 22px;
+  font-size: 0.16rem;
+  margin-bottom:30px;
+  color:#333;
+}
+.develop .textBox p{
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.develop .lineBox{
+  width:12.5%;
+}
+.develop .lineBox  div{
+  margin:0 auto;
+}
+.develop .lineBox > div.topTwoCircle{
+  width:6px;
+  height:6px;
+  margin-bottom:10px;
+  border-radius: 50%;
+  background:#CCCCCC;
+}
+div.lineTop {
+  width:2px;
+  height:21px;
+  background:#CCC;
+}
+div.lineTop.firstLine {
+  height:9px;
+}
+div.circle {
+  width:6px;
+  height:6px;
+  border:2px solid #CCCCCC;
+  border-radius: 50%;
+}
+div.circle.firstCircle{
+  background:#7BAA17;
+  border-color:#7BAA17;
+}
+div.lineBottom {
+  width:2px;
+  height:21px;
+  background:#CCC;
+}
+p.investTitle{
+  font-size: 0.2rem;
+  margin:1em 0 1.5em 0;
+  color:#111;
+}
+div.invest{
+  padding:5px 0 9px 0.8%;
+}
+@media screen and (min-width: 768px) {
+  .details {
+    width:80.66%;
+  }
+  div.anchor{
+    height:1px;
+    margin-bottom:70px;
+  }
+  div.anchor.first{
+    margin-bottom:0;
+    height:0;
+  }
+  .develop .timeBox {
+    width:15%;
+  }
+  .develop .textBox {
+    width:72.5%;
+  }
+  .imgItem1 {
+    width:18.7%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .details {
+    width:100%;
+  }
+  .text{
+    font-size: 0.28rem;
+    line-height: 1.357em;
+  }
+  .develop .timeBox p,.develop .textBox p{
+    font-size: 0.2rem;
+  }
+  div.anchor{
+    height:1px;
+    margin-bottom:50px;
+  }
+  div.anchor.first{
+    margin-bottom:0;
+    height:0;
+  }
+  .detail > .cont > p{
+    font-size: 0.28rem;
+  }
+  .develop .textBox {
+    width:67.5%;
+  }
+  .imgItem1 {
+    width:32%;
+  }
+  .detail > .cont > p{
+    height:1.375em;
+    line-height: 1.375em;
+    margin:1em 0;
+    background-position: 0 center;
+  }
+  .develop .timeBox {
+    width:20%;
+  }
+  p.investTitle{
+    font-size: 0.24rem;
+    color:#111;
+    line-height: 1.375em;
+  }
+  .imgBox + p{
+    font-size: 0.28rem;
+    color:#666;
+    line-height: 1.357em;
+  }
+} 
+.imgItem1{
+  margin-bottom:27px;
+}
+
+

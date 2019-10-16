@@ -1,0 +1,215 @@
+/* 公共样式 */
+div.center_title{
+  font-size: 0.30rem;
+  color:#000;
+  text-align: center;
+}
+div.sub_title{
+  font-size: 0.16rem;
+  color:#505050;
+  margin-top:20px;
+  text-align: center;
+}
+
+div.topImg{
+  font-size: 0.2rem;
+  margin-bottom:2.8em;
+  margin-top:2em;
+}
+/* 业务简介 */
+div.busIntro{
+  margin-bottom:124px;
+}
+.imgItem{
+  box-shadow:0px 10px 25px 0px rgba(0, 0, 0, 0.1);
+  border-radius:8px 8px 8px 8px;
+  padding:18px 5px 28px 5px;
+}
+.subImgItem{
+  text-align:center;
+  font-size:0.12rem; 
+}
+/* 精选大平台 */
+div.stage{
+  padding:5px 0 9px 0.8%;
+}
+.imgItem1{
+  background:#fff;
+  box-shadow:0px 10px 25px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom:27px;
+}
+.subImgItem1{
+  width:93.1%;
+  text-align:center;
+}
+div.tip{
+  font-size: 0.18rem;
+  margin-top: 50px;
+  margin-bottom:79px;
+  text-align:center;
+  color:#000;
+}
+/* 4年服务 */
+div.serve .bigImg{
+  width:88.25%;
+  margin-bottom: 50px;
+}
+div.contact{
+  margin-bottom:42px;
+}
+div.erweima{
+  width:36.5%;
+}
+div.method{
+  align-self: center;
+  width:45.3%;
+}
+div.method div.contactBox{
+  width:18.7%;
+}
+div.method div.desc{
+  font-size: 0.18rem;
+  align-self: center;
+}
+
+/* 协助理赔 */
+div.payBox{
+  width:85.7%;
+  margin-bottom:56px;
+}
+/* div.payItem{
+  width:20.6%;
+} */
+div.payItem .payTitle{
+  font-size:0.24rem;
+  margin-bottom: 34px;
+  text-align: center;
+  color:#68A71F;
+}
+div.payItem p{
+  height:34px;
+  font-size: 0.16rem;
+  color:#363636;
+  margin-bottom: 62px;
+  text-align: center;
+}
+/* 推荐 */
+div.recom{
+  background:#F7F7F7;
+  position:relative;
+  padding-top:5%;
+  padding-bottom:10.4%;
+  margin-bottom:35px;
+}
+div.recText{
+  box-sizing: border-box;
+  width:74.7%;
+  background:#fff;
+  padding:7.5% 6.45% 8.55% 18.6%;
+  font-size: 0.19rem;
+  color:#373737;
+}
+div.GYF{
+  width:26.17%;
+  position:absolute;
+  bottom:0;
+  left:5%;
+}
+p.idInfo{
+  font-size: 0.12rem;
+  color:#68A71F;
+  margin-top:30px;
+  font-weight: bold;
+}
+/* 解决难题 */
+
+div.pop{
+  box-sizing: border-box;
+  font-size: 0.16rem;
+  background: #68A71F;
+  color:#fff;
+  padding:2.68% 2.68% 3.9% 2.68%;
+  box-shadow:0px 10px 20px 0px rgba(155,179,203,0.1);
+  border-radius: 5px;
+  text-align: center;
+}
+div.bottomImg{
+  font-size: 0.2rem;
+  margin-bottom:2em;
+}
+div.financeBox .financeItem{
+  box-sizing: border-box;
+  font-size: 0.2rem;
+  padding:1.4em 1.2em;
+  border:1px solid #E2E2E2;
+  margin-bottom:1.5em;
+}
+div.financeBox .financeItem .financeImgBox{
+  width:20%;
+}
+div.financeBox .financeItem .text{
+  width:70%;
+}
+div.financeBox .financeItem .text p:first-child{
+  font-weight: bold;
+  margin-bottom:0.25em;
+}
+div.financeBox .financeItem .text p:last-child{
+  font-size: 0.8em;
+  color:#666;
+}
+
+@media screen and (min-width: 768px) {
+  div.sub_title {
+    margin-bottom:54px;
+  }
+  div.stage {
+    background-image:url(../../assets/images/service/insurance/polygon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .imgItem1 {
+    width:16.7%;
+  }
+  div.contact {
+    width:64.6%;
+  }
+  div.pop {
+    width:36.66%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p{
+    font-size: 0.28rem;
+    line-height: 1.71em;
+    color:#666;
+  }
+  .imgItem{
+    margin-bottom:1em;
+  }
+  .imgItem p{
+    font-size: 0.24rem;
+    line-height: 1.71em;
+  }
+  div.payItem{
+    margin-top: 4em;
+  }
+  div.payItem .icon{
+    width:80%;
+    margin:0 auto;
+  }
+  div.payItem p{
+    margin-bottom: 2em;
+  }
+  div.payItem .payTitle{
+    margin-bottom:1em;
+  }
+  div.recText p{
+    font-size: 0.24rem;
+  }
+  div.pop{
+    width:60%;
+    margin-top: 2em;
+  }
+}

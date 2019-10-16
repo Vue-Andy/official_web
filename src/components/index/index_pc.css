@@ -1,0 +1,160 @@
+/* index公共样式类 */
+.fir_title{
+  font-size:0.24rem;
+  color:#333;
+  line-height: 1.375em;
+  margin-bottom:0.8em;
+}
+.sub_title{
+  margin-top:3em;
+}
+div.propaganda{
+  padding:0 2em;
+}
+div.propaganda .fir_title{
+  display: block;
+  margin-bottom:0.8em;
+}
+.propaganda-video{
+  padding:0.8em;
+  background: #f0f0f0;
+  border-radius: 0.6em;
+}
+.propaganda-video video{
+  border-radius: 0.4em;
+  vertical-align: bottom;
+}
+.propaganda-bot{
+  width: 100%;
+  text-align:center;
+}
+.propaganda-bot img{
+  width: 30%;
+}
+.fir_title::before{
+  content:'';
+  display:inline-block;
+  width:5px;
+  height:20px;
+  background: #7BAA17;
+  border-radius: 3px;
+  margin-bottom:-5px;
+  margin-right:5px;
+}
+.carousel{
+  top:-70px;
+}
+.checkMore{
+  font-size:0.12rem;
+  margin:6px 0 5px 0;
+  color:#7BAA17;
+}
+.checkMore:hover{
+  color:#7BAA17;
+}
+
+/* 主内容部分样式 */
+div.main > div.bgray{
+  font-size: 0.2rem;
+  background:#FAFAFA;
+  margin-bottom:2em;
+  padding:3.5em 0;
+}
+/* 简介部分样式 */
+div.mainImg{
+  font-size:0.2rem;
+  padding:6em 0 8em 0;
+}
+div.mobImgBox{
+  font-size: 0.2rem;
+  margin-top:2.5em;
+  margin-bottom:3.6em;
+}
+div.mobImgBox > div.mobImgItem{
+  margin-bottom:1.2em;
+}
+div.imgs{
+  font-size: 0.2rem;
+}
+div.imgItem{
+  font-size:0.2rem;
+  margin-bottom:5.6em;
+  text-align: center;
+}
+div.imgItem img{
+  width:8.2em;
+} 
+div.imgItem p.tag{
+  font-size: 1.2em;
+  margin:0.75em 0 0.5em 0;
+} 
+div.imgItem p.text{
+  font-size: 0.9em;
+}
+div.info .intro{
+  font-size:0.16rem;
+  line-height:1.875em;
+  margin-bottom:1.25em;
+}
+div.dynamic p{
+  font-size:0.16rem;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+div.dynamic p.title{
+  padding:0 10px;
+  margin-bottom:5px;
+  margin-top:25px;
+}
+div.dynamic p.title:hover{
+  color:#7BAA17;
+}
+div.dynamic p.abstract{
+  padding:0 10px;
+  margin-bottom:10px;
+  font-size: 0.14rem;
+  color:#999;
+}
+div.sub_cont{
+  font-size: 0.2rem;
+  margin-bottom:5em;
+}
+/* 适应手机端 */
+@media screen and (max-width: 768px) {
+  div.dynamic p.title{
+    font-size: 0.32rem;
+  }
+  div.dynamic p.abstract{
+    font-size: 0.28rem;
+  }
+  .fir_title {
+    font-size: 0.32rem;
+    margin-bottom:0.75em;
+    color:#111;
+  }
+  div.info .intro{
+    font-size: 0.28rem;
+    line-height: 1.71em;
+  }
+  div.propaganda{
+    /* font-size: 0; */
+    padding:0;
+    border-radius: 8px;
+  }
+  div.imgItem p.tag{
+    font-size: 0.36rem;
+    margin:1.11em 0 0.13em;
+  }
+  div.imgItem p.text{
+    font-size: 0.32rem;
+    color:#666;
+  }
+  .checkMore {
+    margin:0;
+    color:#7BAA17;
+    font-size: 0.24rem;
+  }
+}
+
+

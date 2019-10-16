@@ -1,0 +1,207 @@
+div.main{
+  position:relative;
+}
+/* tab标题样式 */
+div.tabTitle{
+  font-size:0.24rem;
+  width:10em;
+  margin-bottom:1.66em;
+}
+div.tabTitle span.line{
+  border-right:2px solid #F5F5F5;
+  height: 1em;
+  align-self: center;
+}
+div.tabTitle span.active{
+  /* color:#7BAA17; */
+  background:#7BAA17;
+  color:#fff;
+  border-radius: 5px;
+  padding:0 10px;
+}
+/* 第一个标签内容样式 */
+div.tabContent .item{
+  font-size: 0.2rem;
+  /* height:13.1em; */
+  margin-bottom:1.25em;
+}
+div.tabContent .imgBox{
+  font-size:0.10rem;
+  margin-bottom:1em;
+}
+div.tabContent p.title:hover{
+  color:#7BAA17;
+}
+div.pagination{
+  text-align: center;
+  margin-bottom:100px;
+}
+div.pagination .pageBtn{
+  display:inline-block;
+  font-size: 0.16rem;
+  color:#999;
+  width:2.5em;
+  height:2.5em;
+  text-align:center;
+  line-height: 2.5em;
+  background: #F5F5F5;
+  border-radius:0.5em;
+  margin-right:1.2em;
+}
+div.pagination .pageBtn.active{
+  background:#7BAA17;
+  color:#fff;
+}
+div.item p{
+  padding:0 10px;
+  height:2em;
+  overflow:hidden;
+  font-size:0.16rem;
+  margin-bottom:0.3em;
+  color:#999;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+div.item p.title{
+  color:#333;
+}
+
+/* 第二个标签内容样式 */
+/* 左边容器 */
+div.leftContainer{
+  box-sizing: border-box;
+  font-size: 0.50rem;
+  padding:1em;
+  /* width:70.8%; */
+/* margin-bottom:1.1em; */
+}
+.el-breadcrumb{
+  font-size: 0.24rem;
+  margin-bottom:2.91em;
+}
+div.newstitle{
+  font-size: 0.20rem;
+  margin-bottom:1em;
+  text-align: center;
+}
+div.time{
+  font-size: 0.16rem;
+  color:#666;
+  margin-bottom:2.5em;
+  text-align: center;
+}
+p.content{
+  font-size: 0.16rem;
+  margin-bottom:1.875em;
+}
+p.sub_content{
+  font-size: 0.14rem;
+  text-align: center;
+  margin-bottom:1.176em;
+  margin-top:10px;
+}
+div.exchange div.exchangeItem{
+  font-size: 0.16rem;
+  color:#666;
+  margin-top:1.25em;
+}
+div.exchange div.exchangeItem:hover{
+  color:#7BAA17;
+}
+/* 右边容器 */
+div.rightContainer{
+  font-size:0.20rem;
+  box-sizing: border-box;
+  padding:2.5em 2.5em 0 1em;
+  /* width:29.2%; */
+  height:100%;
+}
+div.hotArticle{
+  font-size: 0.24rem;
+  color:#666;
+  margin-bottom: 1.25em;
+}
+ul.hotArticleList{
+  margin-left:10px;
+}
+li{
+  font-size:0.16rem;
+  color:#666;
+  white-space: nowrap;
+  word-wrap: no-wrap;
+  text-overflow: ellipsis;
+  margin-bottom:10px;
+}
+li:hover{
+  color:#7BAA17;
+}
+
+/* 返回列表样式 */
+div.returnToList{
+  position: absolute;
+  font-size:15px;
+  top:15em;
+  right:24em;
+  width:40px;
+  height:50px;
+  text-align: center;
+  background:#999;
+  border-radius:5px;
+}
+span.el-breadcrumb__inner.is-link:hover{
+  color:red !important;
+}
+
+
+@media screen and (max-width: 768px) {
+  div.tabTitle{
+    font-size: 0.32rem;
+  }
+  div.tabTitle span.active{
+    padding-bottom:3px;
+  }
+  div.tabContent .item{
+    margin-bottom: 1.6em;
+  }
+  div.item p{
+    font-size: 0.32rem;
+    height:auto;
+  }
+  div.item p + P{
+    font-size: 0.28rem;
+  }
+  div.newstitle{
+    font-size: 0.32rem;
+    margin-bottom: 0.5em;
+  }
+  div.time{
+    font-size: 0.24rem;
+  }
+  p.content{
+    font-size: 0.28rem;
+    line-height: 1.71em;
+    color:#666;
+  }
+  p.sub_content{
+    font-size: 0.24rem;
+  }
+  div.exchange div.exchangeItem{
+    font-size: 0.28rem;
+  }
+  li{
+    font-size: 0.28rem;
+    color: #666;
+  }
+  li p{
+    width:100%;
+    white-space: nowrap;
+    word-wrap: no-wrap;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .el-breadcrumb{
+    font-size: 0.32rem;
+  }
+}
