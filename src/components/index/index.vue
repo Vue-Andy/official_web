@@ -93,6 +93,18 @@
           </el-row>
         </div>
       </div>
+      <!-- 二维码 -->
+      <div class="ewmBox">
+        <el-row>
+          <el-col :xs='24' :sm='8' v-for='(item,index) in bottomImgs' :key='index'>
+            <div class='bottomImgDiv'>
+              <img :src="item.url" alt="" class='fw'>
+              <div class="line"></div>
+              <p>{{item.text}}</p>
+            </div>
+          </el-col>
+        </el-row>
+      </div>
     </div>
   </section>
 </template>
@@ -105,16 +117,21 @@ import { getJson } from '@/api/api'
 import carouselImg1 from '@/assets/images/index/pc_home_banner1.png'
 import carouselImg2 from '@/assets/images/index/pc_home_banner2.jpg'
 import carouselImg3 from '@/assets/images/index/pc_home_banner3.jpg'
+import carouselImg4 from '@/assets/images/index/pc_home_banner4.jpg'
 // mob轮播图 url
 import carouselImg11 from '@/assets/images/index/mobile_home_1.png'
 import carouselImg22 from '@/assets/images/index/mobile_home_2.jpg'
 import carouselImg33 from '@/assets/images/index/mobile_home_3.jpg'
+import carouselImg44 from '@/assets/images/index/mobile_home_4.jpg'
 // 移动端图
 import mobImg1 from '@/assets/images/index/join_pxtx_picture_1.png'
 import mobImg2 from '@/assets/images/index/join_pxtx_picture_2.png'
 import mobImg3 from '@/assets/images/index/join_pxtx_picture_3.png'
 import mobImg4 from '@/assets/images/index/join_pxtx_picture_4.png'
-
+// 底部三张二维码图
+import bottomImg1 from '@/assets/images/index/diaoyou.png'
+import bottomImg2 from '@/assets/images/index/bengyou.png'
+import bottomImg3 from '@/assets/images/index/wayou.png'
 
 export default {
   name: "Index",
@@ -123,10 +140,16 @@ export default {
       imgHeight:'475px',
       // 轮播图
       carouselData: [
-        carouselImg1,carouselImg2,carouselImg3
+        carouselImg1,carouselImg2,carouselImg3,carouselImg4
       ],
       carouselData1:[
-        carouselImg11,carouselImg22,carouselImg33
+        carouselImg11,carouselImg22,carouselImg33,carouselImg44
+      ],
+      // 底部三张二维码图
+      bottomImgs:[
+        {url:bottomImg1,text:'吊友请扫我'},
+        {url:bottomImg2,text:'泵友请扫我'},
+        {url:bottomImg3,text:'挖友请扫我'}
       ],
       mediaUrl:'',
       // 公司简介数据

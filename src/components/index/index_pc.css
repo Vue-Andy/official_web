@@ -120,6 +120,34 @@ div.sub_cont{
   font-size: 0.2rem;
   margin-bottom:5em;
 }
+.ewmBox{
+  font-size:0.15rem;
+  margin-bottom:10em;
+}
+.bottomImgDiv{
+  width:90%;
+  margin:0 auto;
+  font-size:0.24rem;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 0px 10px 0px rgba(0,0,0,0.09);
+  text-align: center;
+  padding-bottom:2em;
+}
+.bottomImgDiv > img{
+  width:5.8em;
+  margin-top:2.33em;
+}
+.bottomImgDiv > .line{
+  height:2px;
+  width:20px;
+  background:#7BAA17;
+  margin:5px auto;
+}
+.bottomImgDiv > p{
+  font-size: 0.18rem;
+  color:#666;
+}
+
 /* 适应手机端 */
 @media screen and (max-width: 768px) {
   div.dynamic p.title{
@@ -154,6 +182,26 @@ div.sub_cont{
     margin:0;
     color:#7BAA17;
     font-size: 0.24rem;
+  }
+  .bottomImgDiv{
+    margin:0 auto;
+    margin-bottom:2.33em;
+    font-size:0.24rem;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 0px 10px 0px rgba(0,0,0,0.09);
+    text-align: center;
+    padding:4em 0;
+  }
+  .bottomImgDiv > img{
+    width:37.2%;
+    margin-top:0;
+  }
+  .bottomImgDiv > .line{
+    margin-top:5px;
+    margin-bottom:5px;
+  }
+  .bottomImgDiv > p{
+    font-size: 0.28rem;
   }
 }
 

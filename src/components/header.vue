@@ -6,11 +6,11 @@
         <div class="logo">
           <router-link to='/index'><img src="../assets/images/header/nav_icon_logo.png" alt=""></router-link>
         </div>
-        <div v-for='(item,index) in navItems' :key='index+"item.path"' @mouseenter='enterRoute(index)' @mouseleave='outRoute' @click='handleClick(index)'>
-          <router-link :to='item.path' :class='{active:routeIndex === index}'>{{item.name}}</router-link>
+        <div class='routeBox' v-for='(item,index) in navItems' :key='index+"item.path"' @mouseenter='enterRoute(index)' @mouseleave='outRoute' @click='handleClick(index)'>
+          <router-link :to='item.path' :class='{active:routeIndex === index}'>{{item.name}}
           <transition name='el-zoom-in-center'>
             <div class="line"></div>
-          </transition>
+          </transition></router-link>
         </div>
       </div>
     </header>
@@ -20,11 +20,11 @@
         <div class="logo">
           <img src="../assets/images/header/nav_icon_logo_white.png" alt="">
         </div>
-        <div v-for='(item,index) in navItems' :key='index+"item.path"' @mouseenter='enterRoute(index)' @mouseleave='outRoute' @click='handleClick(index)'>
-          <router-link :to='item.path' :class='{active:routeIndex === index}'>{{item.name}}</router-link>
+        <div class='routeBox' v-for='(item,index) in navItems' :key='index+"item.path"' @mouseenter='enterRoute(index)' @mouseleave='outRoute' @click='handleClick(index)'>
+          <router-link :to='item.path' :class='{active:routeIndex === index}'>{{item.name}}
           <transition name='el-zoom-in-center'>
             <div class="line"></div>
-          </transition>
+          </transition></router-link>
         </div>
       </div>
     </header>
@@ -147,10 +147,17 @@
 .header_container{
   width:100%;
 }
+.routeBox{
+  height:25px;
+}
+header a{
+  display:inline-block;
+  height:25px;
+}
 a.active{
   color:#7BAA17;
 }
-a.active + .line{
+a.active .line{
   display:block;
 }
 .line{
@@ -178,6 +185,9 @@ header.pc{
 .router-link-active + div{
   display:block;
 }
+.router-link-active div{
+  display:block;
+}
 header .line{
   height:4px;
   border-radius:2px;
@@ -185,6 +195,10 @@ header .line{
 }
 header.indexHeader{
   background:transparent;
+  color:#fff;
+}
+header.indexHeader .line{
+  background:#fff;
   color:#fff;
 }
 header.indexHeader a{
