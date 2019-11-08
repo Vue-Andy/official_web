@@ -140,13 +140,14 @@
       // 获取热点新闻列表
       getHotNews(param) {
         getJson('static/news.json').then(res => {
-          // 起始下标  如总数60  第一页为：49-60 第二页为：37-48  开始下标为  res.data-param*12 + 1  结束下标为  res.data-(param-1)*12-1
+          // 起始下标  如总数35  第一页为：1-12 第二页为：13-24  开始下标为  res.data-param*12 + 1  结束下标为  res.data-(param-1)*12-1
           let length = res.data.length
-          this.allNews = res.data
-          let endIndex = length-(param-1)*12-1    // 第一页： 21-11 第二页： 0-9
-          let startIndex = length - param * 12 + 1 < 0 ? 0 : length - param * 12 + 1
+          // let endIndex = length-(param-1)*12-1    // 第一页： 21-11 第二页： 0-9
+          // let startIndex = length - param * 12 + 1 < 0 ? 0 : length - param * 12 + 1
+          // let endIndex = length-(param-1)*12-1    // 第一页： 21-11 第二页： 0-9
+          let startIndex = (param-1) * 12
           let newList = []
-          for(let i=endIndex; i >= startIndex-1; i--){
+          for(let i=startIndex; i < startIndex + 12; i++){
             if(res.data[i]){
               newList.push(res.data[i])
             }
@@ -163,14 +164,13 @@
       // 获取热点资讯列表
       getHotInfos(param) {
         getJson('static/news.json').then(res => {
-          // 起始下标  如总数35  第一页为：1-12 第二页为：13-24  开始下标为  res.data-param*12 + 1  结束下标为  res.data-(param-1)*12-1
+          // 起始下标  如总数60  第一页为：49-60 第二页为：37-48  开始下标为  res.data-param*12 + 1  结束下标为  res.data-(param-1)*12-1
           let length = res.data.length
-          // let endIndex = length-(param-1)*12-1    // 第一页： 21-11 第二页： 0-9
-          // let startIndex = length - param * 12 + 1 < 0 ? 0 : length - param * 12 + 1
-          // let endIndex = length-(param-1)*12-1    // 第一页： 21-11 第二页： 0-9
-          let startIndex = (param-1) * 12
+          this.allNews = res.data
+          let endIndex = length-(param-1)*12-1    // 第一页： 21-11 第二页： 0-9
+          let startIndex = length - param * 12 + 1 < 0 ? 0 : length - param * 12 + 1
           let newList = []
-          for(let i=startIndex; i < startIndex + 12; i++){
+          for(let i=endIndex; i >= startIndex-1; i--){
             if(res.data[i]){
               newList.push(res.data[i])
             }

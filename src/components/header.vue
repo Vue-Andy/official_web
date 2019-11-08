@@ -30,30 +30,7 @@
     </header>
     <!-- 此头部只使用移动端 -->
     <div class="emptyHeader hidden-sm-and-up"></div>
-    <header class='hidden-sm-and-up mobile'>
-      <div class="headerBox flex">
-        <div class="logo">
-          <img width='83' src="../assets/images/header/mobile/nav_icon_logo.png" alt="">
-        </div>
-        <div class="menu_mob flex" @click='showMenu = !showMenu'>
-          <!-- <i :class="showMenu ?'closeMobMenu' : 'mobMenu'"></i> -->
-          <span>菜单</span>
-          <span :class="showMenu ?'closeMobMenu' : 'mobMenu'"></span>
-        </div>
-      </div>
-      <el-collapse-transition>
-        <div class="menu" v-show='showMenu'>
-          <ul>
-            <li class='flex' v-for='(item,index) in navItems' :key='index+"item.path"' @click='showMenu = !showMenu'>
-              <router-link class='flex' :to='item.path'>
-                <span>{{item.name}}</span>
-                <i class='icon'></i>
-              </router-link>
-            </li>
-          </ul>
-        </div>
-      </el-collapse-transition>
-    </header>
+    
   </div>
 </template>
 
@@ -291,10 +268,12 @@ header.mobile .menu{
   background-repeat: no-repeat;
   background-size: contain;
   display:none;
-  margin-top:0.75em;
+  margin-top:1em;
+  position:relative;
+  float:left;
 }
 .menu li .router-link-active i{
-  display:block;
+  display:inline-block;
 }
 
 </style>
